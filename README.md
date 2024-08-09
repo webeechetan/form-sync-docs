@@ -15,6 +15,7 @@ To use this example, follow these steps:
 
 - Basic knowledge of HTML and JavaScript.
 - An account with `Form Sync` to capture and view form submissions. [Register here](https://form-sync.cloud/register).
+- Register your domain to get a full code snippet to integrate with your form.
 
 ## Installation
 
@@ -29,6 +30,7 @@ Initialize `Form Sync` with the form class and optional configuration parameters
 ```javascript
 FormSync('.your-form-class-name', {
     thankYouMsg: 'my Custom MSG',
+    domainKey: 'your-domain'
 });
 ```
 
@@ -58,6 +60,7 @@ Here is a demo example of how to use the `Form Sync` script with a simple HTML f
         document.addEventListener('DOMContentLoaded', function() {
             FormSync('.form-sync', {
                 thankYouMsg: 'my Custom MSG',
+                domainKey: 'your-domain'
             });
         });
     </script>
